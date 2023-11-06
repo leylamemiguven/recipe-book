@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿Your Digital Recipe Book🌿</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+
+    <div class="text-center">
+        <div class="recipe">
+        <div class="recipe-title">
+            <h1><input class="text-4xl font-bold mb-8" type="text" v-model="recipeTitle" placeholder="Enter recipe title here"></h1>
+        </div>
+        <div class="recipe-middle">
+            <div class="image-ingredients">
+                <div class="recipe-image">
+                    <img src="download.jpg">
+                    <input type="image" v-model="recipeImage" placeholder="Upload recipe image here">
+                </div>
+                <div class="recipe-ingredients">
+                    <h3>INGREDIENTS</h3>
+                    <input type="text" v-model="recipeIngredients" placeholder="Enter recipe ingredients here">
+                </div>
+            </div>
+            <div class="info-directions">
+                <div class="important-info">
+                    <h3>This is where the important info will be </h3>
+                </div>
+                <div class="recipe-directions">
+                    <h3>DIRECTIONS</h3>
+                    <input type="text" v-model="recipeDirections" placeholder="Enter recipe directions here">
+                </div>
+            </div>
+        </div>
+        <div class="notes">
+            <h3>NOTES</h3>
+            <input type="text" v-model="recipeNotes" placeholder="Enter recipe notes here">
+
+        </div>
+        <button> Save</button>
+
+    </div>
+
+
+
+</body>
+</html>
