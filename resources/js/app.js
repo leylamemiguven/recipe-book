@@ -1,8 +1,5 @@
 import './bootstrap';
 
-function toAddRecipe() {
-    window.location.href = 'recipe.html'
-}
 
 function recipeForm() {
     return {

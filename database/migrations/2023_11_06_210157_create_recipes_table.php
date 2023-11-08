@@ -12,13 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('recipes', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
+            // $table->id();
+            $table->text('title');
             $table->text('ingredients');
-            $table->integer('prepTime');
-            $table->integer('cookTime');
-            $table->integer('servings');
-            $table->integer('calories');
+            $table->text('prepTime');
+            $table->text('cookTime');
+            $table->text('servings');
+            $table->text('calories');
             $table->text('directions');
             $table->text('notes')->nullable();
             $table->timestamps();
